@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+:root{
+    --primary-blue: #377DFF;
+    --secondary-blue:#273B60;
+    --std-white: #ffffff;
+    --custom-gray:#4E535C;
+    --custom-green:#c6f50e;
+    
+
+    --fnt-60px:3.75rem;
+    --fnt-40px:2.5rem;
+    --fnt-20px:1.25rem;
+    --fnt-21px:1.27rem;
+    --fnt-12px:0.75rem;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    margin: 0 !important;
+    scroll-behavior: smooth !important;
+    background-color: #e2d0c9;
+}
+
+.validation-form{
+    font-family: 'Playfair Display', serif !important;
+    margin: 0 auto;
+    width: 40%;
+}
+.validation-form h4{
+    font-size: var(--fnt-40px);
+    text-decoration: underline;
+    text-decoration-color: var(--custom-green);
+    margin: 20px 0px 20px 0px ;
+    text-decoration-thickness: 13px;
+}
+.validation-form section ul{
+    list-style: none;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px 0px ;
+    padding: 0;
+    border: 1px solid #000; 
+}
+.validation-form section ul li {
+    height: 100%;
+    width: 100%;
+}
+.validation-form section ul li.w-20{
+    width: 20%;
+}
+.validation-form section ul li.w-30{
+    width: 30%;
+}
+.validation-form section ul li.w-50{
+    width: 50%;
+}
+.validation-form section ul li.w-70{
+    width: 70%;
+}
+.validation-form section ul li.w-33{
+    width: 33.33%;
+}
+.validation-form section ul li.w-60{
+    width: 60%;
+}
+.validation-form section ul li.w-40{
+    width: 40%;
+}
+.validation-form section ul li span input{
+    display: inline-block;
+    border: 1px solid #000;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    line-height: normal;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 11px;
+}
+.validation-form section ul li span input::placeholder{
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.validation-form section input[value="sign-in"]{
+    all: unset;
+    width: 100%;
+    border: 2px solid #000;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-decoration-color: var(--custom-green);
+    text-decoration-thickness: 5px;
+    text-transform: uppercase;
+}
+.validation-form section input[type="checkbox"]{
+    outline: 1px solid #000;
+    background-color: transparent;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+    border: 1px solid #fff;
+}
+.validation-form section input[type="checkbox"] + span{
+    text-decoration: underline;
+    text-decoration-color: var(--custom-green);
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.validation-form section input[type="checkbox"]:checked{
+    background-color: var(--custom-green);
+}
+.validation-form section ul li span input:focus-visible{
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+.validation-form section ul li span{
+    height: 45px;
+    display: inline-block;
+    width: 100%;
+}
+.invalid input{
+    background-color: rgb(255 0 0 / 11%) !important;
+}
+
+@media (max-width: 700px) {
+    .validation-form{
+        width: 80%;
+    }
+}
