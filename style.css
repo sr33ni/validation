@@ -19,7 +19,12 @@ body{
     scroll-behavior: smooth !important;
     background-color: #e2d0c9;
 }
-
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 .validation-form{
     font-family: 'Playfair Display', serif !important;
     margin: 0 auto;
@@ -95,6 +100,7 @@ body{
     text-decoration-color: var(--custom-green);
     text-decoration-thickness: 5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .validation-form section input[type="checkbox"]{
     outline: 1px solid #000;
@@ -131,5 +137,14 @@ body{
 @media (max-width: 700px) {
     .validation-form{
         width: 80%;
+    }
+    .validation-form section ul li.w-20{
+        width: 40%;
+    }
+    .validation-form section ul li.w-40.password-li{
+        width: 60%;
+    }
+    .validation-form section ul li.w-40.number-li{
+width: 100%;
     }
 }
